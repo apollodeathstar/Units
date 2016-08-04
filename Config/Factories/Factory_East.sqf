@@ -21,7 +21,7 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 		["CUP_8Rnd_B_Saiga12_74Slug_M", 20],
 		["30Rnd_9x21_Mag", 20]
 	]],
-	["CUP_B_UAZ_SPG9_CDF", [
+	["CUP_O_UAZ_SPG9_CSAT", [
 		["CUP_launch_RPG18", 2],
 		["CUP_RPG18_M", 10]
 	]],
@@ -190,8 +190,6 @@ if (CTI_CUP_ADDON > 0) then {
 	_u pushBack 'CUP_C_Skoda_White_CIV';
 	_u pushBack 'CUP_C_SUV_TK';
 	_u pushBack 'CUP_I_SUV_Armored_ION';
-	_u pushBack 'CUP_C_Datsun';
-	_u pushBack 'CUP_O_Datsun_PK_Random';
 	_u pushBack 'CUP_O_BRDM2_CSAT';
 	_u pushBack 'CUP_O_BRDM2_ATGM_CSAT';
 	_u pushBack 'CUP_O_BRDM2_HQ_CSAT';
@@ -220,7 +218,9 @@ if (CTI_CUP_ADDON > 0) then {
 	_u pushBack 'CUP_O_GAZ_Vodnik_AGS_RU';
 	_u pushBack 'CUP_O_GAZ_Vodnik_BPPU_RU';
 	_u pushBack 'CUP_O_GAZ_Vodnik_MedEvac_RU';
-	_u pushBack 'CUP_I_Datsun_PK';
+        _u pushBack 'CUP_B_LR_Special_GMG_GB_W';
+        _u pushBack 'CUP_B_Dingo_GER_Wdl';
+        _u pushBack 'CUP_B_Dingo_GL_GER_Wdl';
 };
 //--- OFPS UNITS
 if (CTI_OFPS_ADDON > 0) then { 
@@ -236,7 +236,7 @@ _u pushBack "O_APC_Tracked_02_cannon_F";
 _u pushBack "O_MBT_02_cannon_F";
 _u pushBack "O_APC_Tracked_02_AA_F";
 _u pushBack "O_MBT_02_arty_F";
-
+//--- HEAVY UNITS
 //--- APEX UNITS
 if (CTI_APEX_ADDON > 0) then { 
 	//reskins
@@ -249,7 +249,6 @@ if (CTI_APEX_ADDON > 0) then {
 
 //--- CUP UNITS
 if (CTI_CUP_ADDON > 0) then { 
-	_u pushBack 'CUP_O_BMP1_CSAT';
 	_u pushBack 'CUP_O_BMP1P_CSAT';
 	_u pushBack 'CUP_O_BMP2_CSAT';
 	_u pushBack 'CUP_O_BMP_HQ_CSAT';
@@ -284,6 +283,8 @@ _u pushBack 'O_Heli_Attack_02_black_F';
 _u pushBack 'O_UAV_02_CAS_F';
 _u pushBack 'O_UAV_02_F';
 _u pushBack 'O_Plane_CAS_02_F';
+//--- AIR UNITS
+
 
 //--- APEX UNITS
 if (CTI_APEX_ADDON > 0) then { 
@@ -299,6 +300,7 @@ if (CTI_CUP_ADDON > 0) then {
 	_u pushBack 'CUP_O_UH1H_TKA';
 	_u pushBack 'CUP_O_Mi8_CHDKZ';
 	_u pushBack 'CUP_O_Mi8_SLA_2';
+	_u pushBack 'CUP_O_Mi8_medevac_CHDKZ';
 	_u pushBack 'CUP_B_MI6T_CDF';
 	_u pushBack 'CUP_C_Mi17_Civilian_RU';
 	_u pushBack 'CUP_B_Mi171Sh_ACR';
@@ -306,10 +308,18 @@ if (CTI_CUP_ADDON > 0) then {
 	_u pushBack 'CUP_O_Mi24_P_RU';
 	_u pushBack 'CUP_O_Mi24_V_RU';
 	_u pushBack 'CUP_I_Mi24_Mk3_AT_ION';
+	_u pushBack 'CUP_I_Mi24_Mk3_FAB_AAF';
+	_u pushBack 'CUP_I_Mi24_Mk4_AT_AAF';
+	_u pushBack 'CUP_I_Mi24_Mk3_S8_GSh_AAF';
 	_u pushBack 'CUP_O_Ka50_SLA';
 	_u pushBack 'CUP_O_Ka52_RU';
-	_u pushBack 'CUP_O_Ka60_Hex_CSAT';
+        _u pushBack 'CUP_O_Ka60_Hex_CSAT';
 	_u pushBack 'CUP_O_Ka60_GL_Hex_CSAT';
+	_u pushBack 'CUP_B_AW159_Cannon_RN_Grey';
+	_u pushBack 'CUP_O_AN2_TK';
+	_u pushBack 'CUP_O_C47_SLA';
+	_u pushBack 'CUP_B_L39_BMB_CZ';
+	_u pushBack 'CUP_C_DC3_CIV';
 	_u pushBack 'CUP_C_DC3_CIV';
 	_u pushBack 'CUP_O_C130J_TKA';
 	_u pushBack 'CUP_O_C130J_Cargo_TKA';
@@ -413,6 +423,7 @@ if (CTI_APEX_ADDON > 0) then {
 if (CTI_CUP_ADDON > 0) then { 
 	_u pushBack "CUP_B_RHIB_USMC";
 	_u pushBack "CUP_B_RHIB2Turret_USMC";
+	_u pushBack 'CUP_B_Zodiac_USMC';
 };
 //--- OFPS UNITS
 if (CTI_OFPS_ADDON > 0) then { 
